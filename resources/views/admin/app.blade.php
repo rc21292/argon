@@ -4,11 +4,11 @@
 	@include('admin.layouts.head')
 </head>
 <body class="ms-body ms-aside-left-open ms-primary-theme ">
-	@include('admin.layouts.sidebar')
 	@include('admin.layouts.header')
-	
-	@yield('content')
-
+	<div class="main-content" id="panel">
+		@include('admin.layouts.sidebar')
+		@yield('content')
 	@include('admin.layouts.footer')
+	</div>
 </body>
 </html>
